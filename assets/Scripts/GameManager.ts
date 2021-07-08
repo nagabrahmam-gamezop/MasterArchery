@@ -9,11 +9,11 @@ export class GameManager extends Component {
     Player : Node | null = null
 
     start () {
+        console.log('start :>> ');
         systemEvent.on(SystemEventType.KEY_DOWN, this.keyDown, this);
     }
 
     update (deltaTime: number) {
-
     }
 
     keyDown(){
